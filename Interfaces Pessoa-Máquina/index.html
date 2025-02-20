@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Times;
+        }
+        table, td, th {
+            border-collapse: collapse;
+            border: 1px solid black;   
+        }
+    </style>
+</head>
+<body>
+
+<h1>Viagens Seguras</h1>
+<img src="src_images/aviao.png" width="290" height="200">
+
+<h2>🌎Os nosso destinos</h2>
+<p>Veja aqui a tabela das próximas viagens disponíveis. Clique em na data para mais informações.</p>
+
+<table>
+    <tr>
+        <th colspan="2">Destino</th>
+        <th rowspan="2">Data</th>
+    </tr>
+    <tr>
+        <th>País</th>
+        <th>Cidade</th>
+    </tr>
+    <tr>
+        <td>Espanha</td>
+        <td>Madrid</td>
+        <td><a href="">2019-03-01</a></td>
+    </tr>
+    <tr>
+        <td>França</td>
+        <td>Paris</td>
+        <td><a href="">2019-03-02</a></td>
+    </tr>
+    <tr>
+        <td>França</td>
+        <td>Lyon</td>
+        <td><a href="">2019-03-03</a></td>
+    </tr>
+    <tr>
+        <td>Itália</td>
+        <td>Roma</td>
+        <td><a href="">2019-03-04</a></td>
+    </tr>
+</table>
+
+Não sabe que viagem escolher? Clique <a href="Complement.html">aqui</a>.
+<h2>Reservas</h2>
+<p>Faça aqui a sua reserva</p>
+<form>
+    <label for="personName">Nome: <input type="text">
+    <br>
+    <input type="checkbox"><label for = "go&come"> Ida e volta</label>
+    <br>
+    <label for="flight">Escolha a sua viagem:</label>
+    <input list="flights">
+        <datalist id="flights">
+            <option value="Espanha / Madrid / 2019-03-01">
+            <option value="França / Paris / 2019-03-02">
+            <option value="França / Lyon / 2019-03-03">
+            <option value="Itália / Roma / 2019-03-04">
+        </datalist>
+    <br>
+    <input type="submit" value="Reservar">
+</form>
+
+<h2>As opiniões dos nossos clientes</h2>
+    <li>Adorei - Cliente #123</li>
+    <li>Quero repetir - Cliente #124</li>
+    <li>Quando é a próxima viagem para a Tunísia? - Cliente #125</li>
+
+</body>
+</html>
