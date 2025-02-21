@@ -16,4 +16,16 @@ class ex8 {
 
         return counter;
     }
+
+    public static int[] histogramOptimal(int[] v, int m) {
+        int[] list = new int[m];
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] >= 0 && v[i] < m) {
+                list[v[i]]++;
+            }
+        }
+        
+        return list;
+    }
+}
 }
